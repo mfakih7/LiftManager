@@ -16,6 +16,7 @@ class Contract_pdf extends App_pdf
 
         parent::__construct();
 
+        $this->SetFont('dejavusans', '', 10);
         $this->contract = $contract;
         $this->SetTitle($this->contract->subject);
 
